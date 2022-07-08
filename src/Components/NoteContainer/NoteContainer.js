@@ -24,6 +24,7 @@ function NoteContainer(props) {
                 {notes?.length>0 ? (
                     notes.map((item)=> <Note key={item.id} note={item}
                     deleteNote={props.deleteNote}
+                    updateText={props.updateText}
                     />)
                 ) : (
                     <h3>No Notes</h3>
